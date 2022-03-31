@@ -1,8 +1,9 @@
 from pyabsa import APCCheckpointManager
 import itertools
+from ..abstract_sentiment_model import AbstractSentimentModel
 
 
-class PyabsaSentimentAnalyser:
+class PyabsaSentimentAnalyser(AbstractSentimentModel):
     """
     Wrapper of the pyabsa implementation of algorithms.
     """

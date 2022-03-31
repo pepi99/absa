@@ -1,7 +1,7 @@
-from models.entity_engines.entity_engines.pyabsa_entity_engine import PyAbsaEntityEngine
-from models.sentiment_models.pyabsa_sentiment import PyabsaSentimentAnalyser
+from models.entity_engines.entity_engine_components.pyabsa_entity_engine import PyAbsaEntityEngine
+from models.sentiment_models.sentiment_model_components.pyabsa_sentiment import PyabsaSentimentAnalyser
 from preprocessors.preprocessors.pyabsa_preprocessor import PyAbsaTwitterPreprocessor
-from models.base_model import BaseModel
+from models.pipeline import Pipeline
 import yaml
 
 
@@ -26,7 +26,7 @@ def main():
     Run model
     :return:
     """
-    base_model = BaseModel(PyAbsaEntityEngine, PyAbsaTwitterPreprocessor, PyabsaSentimentAnalyser, config)
+    base_model = Pipeline(PyAbsaEntityEngine, PyAbsaTwitterPreprocessor, PyabsaSentimentAnalyser, config)
 
     text = "#cardano about to smash $1! what an insane run!   you can trade $ada along with other top crypto like #bitcoin and #ethereum on phemex.   get 10% off fees and up to a $750 trading bonus (limited time offer) when using this chainlink to sign up  18 17 175"
     sentiments = base_model.sentiment(text)

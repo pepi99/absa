@@ -1,7 +1,7 @@
 from models.entity_engines.entity_engines.absa_scalac_entity_engine import EntityRecogniser
-from models.sentiment_models.scalac_absa import ScalacSentimentAnalyser
+from models.sentiment_models.sentiment_model_components.scalac_absa import ScalacSentimentAnalyser
 from preprocessors.preprocessors.absa_scalac_twitter_preprocessor import TwitterPreprocessor
-from models.base_model import BaseModel
+from models.pipeline import BaseModel
 import yaml
 
 

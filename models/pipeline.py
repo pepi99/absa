@@ -1,4 +1,4 @@
-class BaseModel:
+class Pipeline:
     def __init__(self, EntityEngine, Preprocessor, SentiAnalyser, config={}):
         """
 

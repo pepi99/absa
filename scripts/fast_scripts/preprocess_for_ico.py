@@ -1,8 +1,5 @@
 import pandas as pd
-from models.entity_engines.entity_engines.pyabsa_entity_engine import PyAbsaEntityEngine
-from models.sentiment_models.pyabsa_sentiment import PyabsaSentimentAnalyser
 from preprocessors.preprocessors.pyabsa_preprocessor import PyAbsaTwitterPreprocessor
-from models.base_model import BaseModel
 import yaml
 from tqdm import tqdm
 
