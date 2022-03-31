@@ -1,0 +1,12 @@
+coins-dict:
+  bch: 'bitcoin cash'
+  bnb: 'binance coin'
+  btc: 'bitcoin'
+  eth: 'ethereum'
+  utc: 'ultracoin'
+  ltc: 'litecoin'
+  xrp: 'ripple'
+  xlm: 'stellar'
+  eos: 'eos'
+  trx: 'tron'
+  link: 'chainlink'
