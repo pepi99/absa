@@ -2,7 +2,8 @@
 
 The code creates a pipeline with custom components and configuration for aspect-based sentiment analysis. 
 Currently, one model has been developed (with all its sub-components, please see details here: https://arxiv.org/abs/2110.08604).
-The implementation can be found in the open-source library https://github.com/yangheng95/PyABSA (also created by the author of the paper),
+The implementation can be found in the open-source library https://github.com/yangheng95/PyABSA (also created by the author of the paper).
+This library essentially wraps PyABSA, includes some pre-trained models (using PyABSA) on custom labelled crypto texts.
 
 
 
@@ -19,7 +20,8 @@ Because our task is limited to fixed entities, (can be seen in the config folder
 # Note!
 
 The pipeline `IS NOT` used for training. It just wraps a couple of components to make easier structuring the code. If you want 
-to train a model yourself, you can just create a new sentiment model component and integrate it in the code.
+to train a model yourself, you can just create a new sentiment model component and integrate it in the code (see PyABSA or scalac's implementation).
+Put your model in one of the checkpoints directories
 
 # How it works
 

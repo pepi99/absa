@@ -1,6 +1,6 @@
 from pyabsa import APCCheckpointManager
 
-checkpoint_name = '/Users/petar.ulev/Documents/absa/checkpoints/pyabsa_checkpoints/fast_lsa_t_Crypto_acc_83.62_f1_84.14_state_dict'
+checkpoint_name = '/Users/petar.ulev/Documents/absa/checkpoints/pyabsa_checkpoints/newest_model/fast_lsa_t_Crypto_acc_86.41_f1_85.88'
 sent_classifier = APCCheckpointManager.get_sentiment_classifier(checkpoint=checkpoint_name)
 
 texts = ['Do you think [ASP]Bitcoin[ASP] is bullish, I am not sure, i know what [ASP]ethereum[ASP] is bearish, actually I think [ASP]bitcoin[ASP] is bullish',

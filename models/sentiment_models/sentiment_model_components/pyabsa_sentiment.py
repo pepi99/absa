@@ -24,7 +24,7 @@ class PyabsaSentimentAnalyser(AbstractSentimentModel):
         # Check if aspects were found:
         ct = aspects.count('[ASP]')
         if (ct % 2 == 0) and ct > 0:  # [ASP] token appears even number of times, also more than 0
-            pyabsa_sents = self.model.infer(aspects, print_result=False)
+            pyabsa_sents = self.model.infer(aspects, print_result=False) # pylint: disable=unused-import
             pyabsa_sents = {
                 'sentiment': list(itertools.chain(*[pyabsa_sents[j]['sentiment'] for j in range(len(pyabsa_sents))])),
                 'confidence': list(itertools.chain(*[pyabsa_sents[j]['confidence'] for j in range(len(pyabsa_sents))])),
